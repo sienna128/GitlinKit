@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806" icon="Search.png" search="LED">
+    <title>Search</title>
+    <instances>
+        <instance moduleIdRef="Level-Converter-v11" modelIndex="6145" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Level-Converter-v11.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="electron_board" modelIndex="5777" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/electron_board.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="1206ColorLEDModuleID" modelIndex="6148" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/SMD_LED_generic_1206.fzp" flippedSMD="true">
+            <property name="color" value="Red (633nm)"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LilyPad-slide-switch13" modelIndex="6150" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LilyPad-slide-switch13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LED-10MMfix" modelIndex="6152" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-led-10mm_fix.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Bean_revE" modelIndex="5692" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Bean_revE.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun_BadgerArray" modelIndex="6155" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/SparkFun_BadgerArray.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LilyPad_LED-v14" modelIndex="6157" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LilyPad_LED-v14.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="mp3-trigger-v22" modelIndex="5781" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/mp3-trigger-v22.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="EspruinoPico" modelIndex="6160" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/EspruinoPico_8fb644a5b6642112445ed6d90bc494d8_6.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-STP16CP05-" modelIndex="6162" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-stp16cp05-.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LilyPad_Arduino_USB" modelIndex="5785" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LilyPad_Arduino_USB.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_Conductivity Circuit" modelIndex="6165" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/atlas-sientific_Conductivity Circuit.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="4d5dcc6408079f54cbda4d35e4d0b8fa" modelIndex="6167" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/BASIC_Stamp_2p24.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DiscreteSemi-CNZ1120-PTH" modelIndex="6169" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-discretesemi-cnz1120-pth.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-PowerIC-ZXLD1360-" modelIndex="6171" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-poweric-zxld1360-.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="f0d627984e1614e5c1c797471f529619" modelIndex="6173" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/BASIC_Stamp_2pe.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Arduino_Esplora" modelIndex="5797" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino_Esplora.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BUTTONPAD-2X2SINGLE-" modelIndex="6176" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-buttonpad-2x2single-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="5mmColorLEDModuleID" modelIndex="5637" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LED-generic-5mm.fzp">
+            <property name="color" value="Red (633nm)"/>
+            <views>
+                <iconView layer="breadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="RN41-v14" modelIndex="6179" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/RN41-v14.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LUXEON-REBEL-" modelIndex="6181" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-luxeon-rebel-.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LDH-45-350B" modelIndex="6183" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LDH-45-350B.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun_BadgerStick" modelIndex="5805" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/SparkFun_BadgerStick.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LED-1206" modelIndex="6186" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-led-1206.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="bf73a00d2ecd04be25675ebfb2d130c0" modelIndex="6188" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Humidity_Sensor_SHT15.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-ENCODER_RGB_CA-" modelIndex="6190" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-encoder_rgb_ca-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Tricolor-LED v16" modelIndex="6192" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Tricolor-LED v16.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="microSD_Shield-v13" modelIndex="5820" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/microSD_Shield-v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Raspberry_Pi_Zero_rev1.1" modelIndex="5713" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Raspberry_Pi_Zero_1.fzp">
+            <views>
+                <iconView layer="icon">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LIGHTPIPE-7511-" modelIndex="6196" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-lightpipe-7511-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="760832bc79fe1f34e99f420ad872a0b8" modelIndex="5706" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/BASIC_Stamp_2.fzp">
+            <views>
+                <iconView layer="icon">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Dagu_DGServo_9g_header_male" modelIndex="6199" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Dagu DGServo 9g header (male).fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LilyPad-Simple-v25" modelIndex="5824" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LilyPad-Simple-v25.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ESP8266-Thing-Dev" modelIndex="5826" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/ESP8266-Thing-Dev.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-WS2801-" modelIndex="6203" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-ws2801-.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Power Screwshield 1.0a" modelIndex="5828" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Power Screwshield 1.0a.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="femtobuck" modelIndex="6206" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/femtobuck.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Shield_Eth06-PoE" modelIndex="5737" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Shield_Eth06-PoE.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment20an" modelIndex="6209" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_20,32_an.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Trackballer-v12" modelIndex="6211" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Trackballer-v12.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="RJ45_TRXCOM" modelIndex="6213" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/RJ45_TRXCOM.fzp">
+            <property name="part number" value="TRJ0011BANL"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LED_RING-" modelIndex="6215" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-led_ring-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="0d35715c371dab9d8b52b3c09444f755" modelIndex="6217" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/led-rgb-4pin-anode_rbg.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LED-SMD_RGB(WS2812)" modelIndex="6219" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-WS2812.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-HEF4543-PTH" modelIndex="6221" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-hef4543-pth.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="d4d5af9700923b8a114f57961f29a8a0" modelIndex="5638" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/led-rgb-4pin-cathode.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Button-LED-Breakout-v10" modelIndex="6224" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LED Tactile Button Breakout v10.fzp">
+            <property name="part number" value="BOB-10467"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SHT1x-Breakout" modelIndex="6226" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/SHT1x-Breakout.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="GPSShield-v15" modelIndex="5837" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/GPSShield-v15.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ArduinoBluetoothMatev13" modelIndex="5839" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/ArduinoBluetoothMatev13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WeMos_D1_Mini_OLED_Shield_no_headers" modelIndex="6230" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/WeMos-D1-mini-OLED-Shield-no-headers.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="PocketBeagle" modelIndex="6232" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/PocketBeagle.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Mega_Shield-v13" modelIndex="5843" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Mega_Shield-v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="pinoccio_board" modelIndex="5693" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/pinoccio.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="intel-arduino_galileo_gen2" modelIndex="5846" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/intel-arduino_galileo_gen2.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="blueIOT_RevB" modelIndex="5848" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino-BLE-LowPower-RevB-final_5.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Dagu_DGServo_9g_header_connector_female" modelIndex="6238" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Dagu DGServo 9g header connector (female).fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LTE-302-" modelIndex="6240" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-lte-302-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BUTTONPAD-2X2--SPECIAL" modelIndex="6242" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-buttonpad-2x2--special.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="CathodeLEDRGBSuperfluxModuleID" modelIndex="6244" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/led_flux_rgb_cathode.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-7-SEGMENT-4DIGIT-YOUNGSUN-LONGPADS" modelIndex="6246" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-displays-7-segment-4digit-youngsun-longpads.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Modkit Shield-v1a" modelIndex="5858" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Modkit Shield-v1a.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-RF-GS406SMD-SOCKET" modelIndex="6249" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-rf-gs406smd-socket.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="5DOF-v25" modelIndex="6251" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/5DOF-v25.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-AnalogIC-MCP41XXX-" modelIndex="6253" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-analogic-mcp41xxx-.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-ALPHANUMERIC-PTH" modelIndex="6255" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-displays-alphanumeric-pth.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="MP3 Shield-v13" modelIndex="5862" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/MP3 Shield-v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LED_BARGRAPH_10-" modelIndex="6258" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-led_bargraph_10-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Arduino_Leonardo_Rev3(fix)" modelIndex="5866" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino_Leonardo_Rev3(fix).fzp">
+            <views>
+                <iconView layer="icon">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment56,9an" modelIndex="6261" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_56,9_an.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="pololu0002_a988" modelIndex="6263" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/pololu0002_a988.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="intel-arduino_galileo_gen2-(simple)" modelIndex="5715" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/intel-arduino_galileo_gen2-simple.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="603ColorLEDModuleID" modelIndex="6266" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/SMD_LED_generic_0603.fzp" flippedSMD="true">
+            <property name="color" value="Red (633nm)"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7e3598758afd7c1363215b7f0c124af8" modelIndex="6268" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Digital_Panel_Meter__Voltage__DMS_20PC.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-AnalogIC-MCP42XXX-" modelIndex="6270" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-analogic-mcp42xxx-.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LUXEON-SMD" modelIndex="6272" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-luxeon-smd.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="cellular shield-v12" modelIndex="5872" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/cellular shield-v12.fzp">
+            <views>
+                <iconView layer="icon">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BUTTONPAD-2X2SINGLE-KIT" modelIndex="6275" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-buttonpad-2x2single-kit.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="XBee-Regulated-v12" modelIndex="5880" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/XBee-Regulated-v12.fzp">
+            <views>
+                <iconView layer="icon">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="audiojack_breakout-v11" modelIndex="6278" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/audiojack_breakout-v11.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-MAX232-PTH" modelIndex="6280" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-max232-pth.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Prolight RGB 3 Watt Star" modelIndex="5640" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LED_Prolight_RGB.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-RF-GS406SMD-MATING_SMD_***SPECIAL" modelIndex="6283" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-rf-gs406smd-mating_smd____special.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="PowerIR-v11" modelIndex="5890" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/PowerIR-v11.fzp">
+            <views>
+                <iconView layer="breadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ds1809_ic_dip" modelIndex="6286" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/ds2809_ic.fzp">
+            <property name="part number" value="DS1809"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="74f3591ccbd4ba20730577a93d0aeda9" modelIndex="6288" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/led-rgb-4pin-cathode_rbg.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="FTDI Basic-v13_3.3v" modelIndex="5892" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/FTDI Basic-v13_3.3v.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="RGB_matrix_v25" modelIndex="5894" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/RGB_matrix_v25.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="sparkfun_storage_microsd" modelIndex="6292" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun_storage_microsd.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment13cat" modelIndex="6294" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_13_cat.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment13an" modelIndex="6296" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_13_an.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="0b6deb11c8005423ea8d84452203654d" modelIndex="6298" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/HCMS-29xx.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="MPR121-Breakout-v13" modelIndex="6300" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/MPR121-Breakout-v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="5cc9de9cdfa593d8e073514cde1c7c77" modelIndex="6302" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/BASIC_Stamp_2px24.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SPARKCORE_v1_fix" modelIndex="5691" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/SPARKCORE_v1_fix.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="arch_v1.1" modelIndex="5903" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/seeed_arch_v1.1.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BUTTONPAD-4X4-" modelIndex="6306" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-buttonpad-4x4-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ArduPilotMega_v15" modelIndex="5909" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/ArduPilotMega_v15.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Gizwits_WiFi_Witty_ESP_12F" modelIndex="5911" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Gizwits_WiFi_Witty_ESP_12F.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="intel_edison_minibreakout_bottom_fix" modelIndex="6310" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/intel_edison_minibreakout-bottom_fix.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="huzzah_esp8266" modelIndex="6101" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/huzzah_esp8266.fzp">
+            <property name="part number" value="2471"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment10cat" modelIndex="6313" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_9,9_cat.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-MAX7219-DIP" modelIndex="6315" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-max7219-dip.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BUTTONPAD-4X4-SPECIAL" modelIndex="6317" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-buttonpad-4x4-special.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="IRF520_mos_module_7115327c8b8b62b1ba195a98bd66e077_5" modelIndex="6319" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/IFR520_MOS_module.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_pH Circuit" modelIndex="6321" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/atlas-sientific_pH Circuit.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="cb9c6041c0b15c9c1a63560527d7693a" modelIndex="6323" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Peppermill Power Board.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-BUTTONPAD-2X2-" modelIndex="6325" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-buttonpad-2x2-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Connectors-MAGJACK-" modelIndex="6327" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-connectors-magjack-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Memoire-1.0" modelIndex="5920" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Memoire-1.0.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="FTDI Basic-v13" modelIndex="5922" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/FTDI Basic-v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="f2341c24e2a6d9182a55c653b6bbefed" modelIndex="6331" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7-segment_display.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="5f7b51547fafb902305f5b3cbb81bb74" modelIndex="6333" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/BASIC_Stamp_2p40.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Connectors-MAGJACK-2-" modelIndex="6335" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-connectors-magjack-2-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="intel_edison_minibreakout_fix" modelIndex="6337" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/intel_edison_minibreakout_fix.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="3mmColorLEDModuleID" modelIndex="6339" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LED-generic-3mm.fzp">
+            <property name="color" value="Red (633nm)"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="CathodeLEDSuperfluxModuleID" modelIndex="6341" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/led_flux_blue_cathode.fzp">
+            <property name="color" value="Blue"/>
+            <views>
+                <iconView layer="breadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="805ColorLEDModuleID" modelIndex="6343" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/SMD_LED_generic_0805.fzp" flippedSMD="true">
+            <property name="color" value="Red (633nm)"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="RFID_USB_Reader-v14" modelIndex="6345" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/RFID_USB_Reader-v14.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="chipkit_BasicIOShield" modelIndex="6347" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/chipkit_BasicIOShield.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ws2812b" modelIndex="6349" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/ws2812b.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-TLC5940--RHB" modelIndex="6351" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-tlc5940--rhb.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LED_Matrix_Kingbright_TC07-11" modelIndex="6353" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LED_Matrix_Kingbright_TC07-11.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-7-SEGMENT-4DIGIT-" modelIndex="6355" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-displays-7-segment-4digit-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="PWM-Shield-v12" modelIndex="5947" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/PWM-Shield-v12.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Ardumoto v13" modelIndex="5951" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Ardumoto v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-A6282--LP" modelIndex="6359" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-a6282--lp.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-7-SEGMENT-4DIGIT-YOUNGSUN-" modelIndex="6361" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-displays-7-segment-4digit-youngsun-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="screwshield-v15" modelIndex="5955" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/screwshield-v15.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="red_led_matrix8x8" modelIndex="6364" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LBT2088AH.fzp">
+            <property name="part number" value="LBT2088AH"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-7-SEGMENT-4DIGIT-PTH" modelIndex="6366" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-displays-7-segment-4digit-pth.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Arduino_Micro_Rev03(fix)" modelIndex="5959" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Arduino_Micro_Rev03(fix).fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-TLC5940--NT" modelIndex="6369" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-tlc5940--nt.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_Pre-AssembledFemaleBNC" modelIndex="6371" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/atlas-sientific_Pre-AssembledFemaleBNC.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="AnodeLEDSuperfluxModuleID" modelIndex="5639" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/led_flux_blue_anode.fzp">
+            <property name="color" value="Blue"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LED-0603" modelIndex="6374" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-led-0603.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment10an" modelIndex="5641" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_9,9_an.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-A6282--ES" modelIndex="6377" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-a6282--es.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="2d3cbb853835749c51cc0d6e4bfd2c90" modelIndex="6379" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/BASIC_Stamp_2e.fzp">
+            <views>
+                <iconView layer="icon">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="FTDI Basic-v13_lily" modelIndex="5965" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/FTDI Basic-v13_lily.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment100an" modelIndex="6382" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_100_an.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LiPo-USB-Charger-v21" modelIndex="6384" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LiPo-USB-Charger-v21.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="intel-arduino_galileo-(simple)" modelIndex="5969" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/intel-arduino_galileo-simple.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Real_Time_Clock_Module___DS1307_RTC_Breakout_Board" modelIndex="5971" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Real_Time_Clock_Module___DS1307_RTC_Breakout_Board.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="TB6612FNG Breakout v11" modelIndex="6388" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Motor Driver 1A Dual TB6612FNG v11.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="xbeeshield-v13" modelIndex="5975" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/xbeeshield-v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-7-SEGMENT-4DIGIT-FOR_POGOBED_ONLY" modelIndex="6391" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-displays-7-segment-4digit-for_pogobed_only.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ITG-3200-v11" modelIndex="6393" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/ITG-3200-v11.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="arch_pro_v1" modelIndex="5977" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/seeed_arch_pro_v1.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LED-TRICOLOR-" modelIndex="6396" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-led-tricolor-.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ProtoShield-v25" modelIndex="5979" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/ProtoShield-v25.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="144096d13637627703324c683e3211ec_40" modelIndex="6399" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/OMRON_G5LE.fzp">
+            <property name="part number" value="G5LE-1&#10;"/>
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="MIDI_Shield-v13" modelIndex="5983" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/MIDI_Shield-v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-APA3010SF4C-" modelIndex="6402" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-apa3010sf4c-.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="breadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Breadboard Power Supply - SMD v12" modelIndex="6404" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Breadboard Power Supply - SMD v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-LED-LED--FKIT-1206" modelIndex="6406" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-led-led--fkit-1206.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment100cat" modelIndex="6408" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_100_cat.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LeDeuligne1.1" modelIndex="5986" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LeDeuligne1.1.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="jlpcb-089" modelIndex="5741" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/jlpcb-089.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-TAC_SWITCH-KSA_SEALED" modelIndex="6412" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-tac_switch-ksa_sealed.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Rotoshield-1.0a" modelIndex="5988" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Rotoshield-1.0a.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="grove_oled_128x96" modelIndex="6415" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/seeed_grove_oled_128x96.fzp">
+            <views>
+                <iconView layer="icon">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="PHOTON_fix" modelIndex="5992" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/PHOTON_fix.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="2d505f861194750183f944ba86c13b44_28" modelIndex="6129" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/tsop312.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WeMos_D1_Mini_WS2812B_RGB_Shield_no_headers" modelIndex="6419" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/WeMos-D1-mini-WS2812B-RGB-Shield-no-headers.fzp">
+            <views>
+                <iconView layer="breadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="145b5412a0ffbe91a876166139419e15" modelIndex="6421" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/BASIC_Stamp_2sx.fzp">
+            <views>
+                <iconView layer="breadboardbreadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-MAX232-SOIC16" modelIndex="6423" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-max232-soic16.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="sx1509-breakout" modelIndex="5995" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sx1509-breakout.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-DigitalIC-TLC5940-PWP" modelIndex="6426" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-digitalic-tlc5940-pwp.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="breadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LED_Matrix_Kingbright_TA07-11" modelIndex="5642" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/LED_Matrix_Kingbright_TA07-11.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment56,9cat" modelIndex="6429" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_56,9_cat.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Electromechanical-ENCODER_2LED-" modelIndex="6431" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-electromechanical-encoder_2led-.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Amplified-Mic-Electret-v14" modelIndex="6433" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Amplified-Mic-Electret-v14.fzp">
+            <views>
+                <iconView layer="breadboardbreadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_ENV-32X" modelIndex="6435" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/atlas-sientific_ENV-32X.fzp">
+            <views>
+                <iconView layer="icon">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="MIDI Music Shield-v13" modelIndex="6006" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/MIDI Music Shield-v13.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Displays-7-SEGMENT-DISPLAY-PTH" modelIndex="6438" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-displays-7-segment-display-pth.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="quadstep-v12" modelIndex="6440" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/quadstep-v12.fzp">
+            <views>
+                <iconView layer="breadboardbreadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="canbus_shield-v12" modelIndex="6008" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/canbus_shield-v12.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="blueIOT_Rc1-final" modelIndex="5699" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/blueIOT_Rc1-final.fzp">
+            <views>
+                <iconView layer="icon">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_ORP Circuit" modelIndex="6444" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/atlas-sientific_ORP Circuit.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="intelEdison-HiroseDF40" modelIndex="5716" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/intel_edison-hirosedf40.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_PWR-SNS" modelIndex="6447" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/atlas-sientific_PWR-SNS.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="atlas-sientific_FLO-30 Circuit" modelIndex="6449" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/atlas-sientific_FLO-30 Circuit.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="SparkFun-Sensors-DCM01-" modelIndex="6137" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/sparkfun-sensors-dcm01-.fzp" flippedSMD="true">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="e89358121bacffbe9b6372e42e4799f4LEDModuleID" modelIndex="6452" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/led-rgb-6pin.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="DUO_LED_RG" modelIndex="6454" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/DUO_LED_RG.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ISD1932 Breakout-v11" modelIndex="6456" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/ISD1932 Breakout-v11.fzp">
+            <views>
+                <iconView layer="breadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="7segment20cat" modelIndex="6458" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/7segment_20,32_cat.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="intel-arduino_galileo" modelIndex="6026" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/intel-arduino_galileo.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Color-LCD-Shield-v14" modelIndex="6028" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/Color-LCD-Shield-v14.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="AnodeLEDRGBSuperfluxModuleID" modelIndex="6462" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/led_flux_rgb_anode.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="M5450_LED_Driver" modelIndex="5675" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/M5450_LED_Driver.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="PowerCell-v13" modelIndex="6465" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/PowerCell Lipo Charger Booster v13.fzp">
+            <views>
+                <iconView layer="breadboardbreadboard">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+        <instance moduleIdRef="f5sadfcefde5f807268983b38d37da5dLEDModuleID" modelIndex="6467" path="C:/Users/tgitlin/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/led-rgb-4pin-anode.fzp">
+            <views>
+                <iconView layer="">
+                    <geometry z="0" x="-1" y="-1"/>
+                </iconView>
+            </views>
+        </instance>
+    </instances>
+</module>
