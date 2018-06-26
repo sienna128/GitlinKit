@@ -10,12 +10,12 @@
 
 ***************************************************************************/
 
-#include "LedControl.h"           // include the library to drive the LED Control
+#include "LedControl.h"           // include the library to drive the MAX72XX LED Control
 #include <HammingEncDec.h>        // include the Hamming encoder/decoder functionality
 #include <OpticalModDemod.h>      // include the modulator/demodulator functionality
 
 OpticalReceiver phototransistor;  // create an instance of the receiver
-
+//ADAFRUIT METRO MINI SDA is A4 and SCL is A5
 /*
  LedControl for a MAX72XX 8 digit LED display (such as a MAX7219)
  Pin 12 is connected to the DataIn 
