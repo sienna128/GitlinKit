@@ -42,6 +42,7 @@ int            laserreceivespeed = 2000; //MUST MATCH THE SPEED AS DEFINED IN TH
 
 byte           c;                     // variable to hold the byte returned from the receiver
 int            i;                     // loop counter
+int            j;                     // alternate loop counter for button-press (going to pull it off the cyclic timer and replace with button)
 int            measurand;             // tracks the number of measurands (3 for the demo, Temp, Press and Humidity)
 unsigned long  timelastchar;          // variable to hold the time the last valid character was received
 bool           linkgood;              // flag to store optical link status
@@ -55,7 +56,8 @@ unsigned long  timenow;               // holds the Arduino running time in milli
 String         parameterValue;      // holds the measurand being built up character-by-character
 String         strTemperature, strPressure, strHumidity; // holds the values of the measurands
 char           tempChar;
-int            LED_Temp = 6, LED_Press = 5, LED_Humid = 4;  // Pins for the Temp, Press, and Humidity LEDs
+const int      LED_Temp = 6, LED_Press = 5, LED_Humid = 4;  // Pins for the Temp, Press, and Humidity LEDs
+const int      BUTTON_INPUT = 3; //Pin for button press input.
 
 // Pin value for the phototransistor input
 const int      PHOTOTRANSISTOR_RECEIVE = 7;
@@ -75,7 +77,7 @@ void setup()
   
   phototransistor.set_speed(laserreceivespeed);             // laser receive speed - should be 500+ bits/second, nominal 2000 (=2KHz)
   phototransistor.set_rxpin(PHOTOTRANSISTOR_RECEIVE);       // pin the phototransistor is connected to
-  phototransistor.set_inverted(true);                       // if receive signal is inverted (Laser on = logic 0) set this to true
+  phototransistor.set_inverted(false);                       // if receive signal is inverted (Laser on = logic 0) set this to true
   phototransistor.begin();                                  // initialize the receiver
 
   // The MAX72XX is in power-saving mode on startup, so wake it up
@@ -103,10 +105,11 @@ ISR(TIMER2_COMPA_vect)
 void loop()
 {
   c = phototransistor.GetByte();     // get a character from the laser receiver if one is available
+  
   if (c>0)
   {
    // if a character is ready, look at it
-   //Serial.println(c);
+   Serial.println(c);
    //tempChar=(char)c;
    //Serial.println(tempChar);
     blankedvalues=false;
@@ -117,19 +120,19 @@ void loop()
       case 84:         // ASCII T termination character for temperature, use string built to this point for temp
         strTemperature=parameterValue;
         parameterValue="";
-        //Serial.println(strTemperature);
+        Serial.println(strTemperature);
         //displayValue(strTemperature);
         break;
       case 80:        // ASCII P termination character for pressure, use string built to this point for pressure
         strPressure=parameterValue;
         parameterValue="";
-        //Serial.println(strPressure);
+        Serial.println(strPressure);
         //displayValue(strPressure);
         break;    
       case 72:        // ASCII H termination character for humidity, use string built to this point for humidity
         strHumidity=parameterValue;
         parameterValue="";
-        //Serial.println(strHumidity);
+        Serial.println(strHumidity);
         //displayValue(strHumidity);
         break;
       default :
@@ -142,7 +145,7 @@ void loop()
 
   if (linkgood)
   {
-    // cycle through displaying the values if the link is good
+   // cycle through displaying the values if the link is good
    if (timetoswitch)
    {
     timenow=millis();
@@ -186,21 +189,21 @@ void loop()
   {
   // link is bad, so display a distinctive pattern,
   // turn off the individual LEDs, and blank out the measurands
-   if (!blankedvalues)
-   {
-     blankedvalues=true;
-     digitalWrite(LED_Temp, LOW);
-     digitalWrite(LED_Press, LOW);
-     digitalWrite(LED_Humid, LOW); 
-     strTemperature = " ";
-     strPressure    = " ";
-     strHumidity    = " ";
-     lc.clearDisplay(0);
-     lc.setRow(0,5,0x0E); // diplay a capital L
-     lc.setRow(0,4,0x77); // diplay a capital A
-     lc.setRow(0,3,0x5B); // diplay a lowercase S
-     lc.setRow(0,2,0x4F); // diplay a capital E
-     lc.setRow(0,1,0x05); // diplay a lowercase r
+    if (!blankedvalues)
+    {
+      blankedvalues=true;
+      digitalWrite(LED_Temp, LOW);
+      digitalWrite(LED_Press, LOW);
+      digitalWrite(LED_Humid, LOW); 
+      strTemperature = " ";
+      strPressure    = " ";
+      strHumidity    = " ";
+      lc.clearDisplay(0);
+      lc.setRow(0,5,0x0E); // diplay a capital L
+      lc.setRow(0,4,0x77); // diplay a capital A
+      lc.setRow(0,3,0x5B); // diplay a lowercase S
+      lc.setRow(0,2,0x4F); // diplay a capital E
+      lc.setRow(0,1,0x05); // diplay a lowercase r
     }
   } //end IFCHECK-ELSE (link is bad)
 } // end main loop
