@@ -1,5 +1,5 @@
 /***************************************************************************
-  Laser Transmitter Code SIMPLIFIED FOR TESTING
+  Laser Transmitter Code
   
   This is a program using a BME280 humidity, temperature & pressure sensor
   using I2C to communicate to an Arduino
@@ -13,7 +13,7 @@
   Tom Gitlin 
   https://github.com/HobbyTransform/Encoded-Laser-and-LED-Serial-Communication
 
-  Arduino sketch by Tom Gitlin; modified by Jimmy Acevedo summer 2018
+  Arduino sketch by Tom Gitlin
   
 ***************************************************************************/
 
@@ -23,8 +23,6 @@
 
 #define BME280_ADDRESS (0x76) // Need to set the I2C address to Low = 0x76 (vs High = 0x77)
                               // since the module defaults to 0x77 in the library)
-int LASERPIN  = 13;
-int LASERRATE = 2000;
 
 Adafruit_BME280 bme;          // create an I2C instance to talk to the sensor
 
@@ -37,58 +35,57 @@ unsigned long delaytime=500;  // delay between transmitting measurands in millis
                               // need a 'long' value due to it being compared to the Arduino millis value
 int intercharacterdelay=30;   // delay between individual characters of a message (nominally 30ms)
 float temperature, pressure, humidity;  // variable to hold values
-boolean english =true;         // flag to use english units, otherwise use SI
+boolean english=true;         // flag to use english units, otherwise use SI
 String strTemperature, strPressure, strHumidity; // String values for the measurands
 char incomingByte;            // variable to hold the byte to be encoded
 uint16_t msg;                 // varible to hold the message (character)
 int LED_SensorError = 5;      // Pin for an LED to indicate something is wrong with the sensor
 int i;                        
 
-void setup() 
-{
+void setup() {
   pinMode(LED_SensorError, OUTPUT);
   Serial.begin(9600);
 
   // Check for the sensor. If there is an error, blink the SensorError LED
-  while (!bme.begin()) 
-  {  
-    Serial.println(F("Could not find the temp/humidity/pressure sensor. Check the I2C address and/or wiring"));
+  while (!bme.begin()) {  
+    //Serial.println(F("Could not find the temp/humidity/pressure sensor. Check the I2C address and/or wiring"));
     digitalWrite(LED_SensorError, HIGH);
     delay (500);
     digitalWrite(LED_SensorError, LOW);
     delay (500);
     //while (1);
   }
-  laser.set_speed(LASERRATE);      // laser modulation speed - should be 500+ bits/second, nominal 2000 (=2KHz)
-  laser.set_txpin(LASERPIN);        // pin the laser is connected to
+  laser.set_speed(2000);      // laser modulation speed - should be 500+ bits/second, nominal 2000 (=2KHz)
+  laser.set_txpin(13);        // pin the laser is connected to
   laser.begin();              // initialize the laser
 }
 
 // Set up an interrupt service routine to transmit characters
 // Arduino Timer2 interrupt toggles the LIGHT_SEND_PIN at the laser send speed to transmit each half bit
-ISR(TIMER2_COMPA_vect)
-{
+ISR(TIMER2_COMPA_vect){
   laser.transmit(); // transmit a character if one is ready
 }
 
-void loop() 
-{
-    
-    temperature   = bme.readTemperature();      // read the temperature from the sensor. Pemperature is returned in degrees C
-    pressure      = bme.readPressure() / 100;   // read the pressure. Pressure is returned in Pascals, divide by 100 to get millibars
-    humidity      = bme.readHumidity();         // read the humidity. Humidity is returned in percent relative humidity
+void loop() {
+
+    temperature = bme.readTemperature();  // read the temperature from the sensor. Pemperature is returned in degrees C
+    pressure = bme.readPressure()/100;    // read the pressure. Pressure is returned in Pascals, divide by 100 to get millibars
+    humidity = bme.readHumidity();        // read the humidity. Humidity is returned in percent relative humidity
 
     // if english units are desired, perform the conversion
-    if (english) 
-    {
+    if (english) {
       temperature = temperature * 1.8 + 32.0; // convert C to F
       pressure = pressure * 0.029533;         // convert millibars to inches of mercury hg
     }
 
+ // Test values
+ //temperature=-345.678;
+ //pressure=-1.11;
+ //humidity=88.88;
  
     strTemperature=String(temperature)+="T";
-    Serial.print(F("Temp: "));
-    Serial.println(strTemperature);
+    //Serial.print(F("Temp: "));
+    //Serial.print(strTemperature);
     laserTransmit(strTemperature);
     
     delay(delaytime);
