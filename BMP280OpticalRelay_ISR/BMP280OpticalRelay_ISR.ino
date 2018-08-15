@@ -51,12 +51,12 @@ void setup()
   Serial.begin(9600);                 // start the serial port on the Arduino
   
   // *** FOR THE MODULES THAT JIMMY BOUGHT, THIS NEEDS TO BE FLIPPED W/R/T TOM'S RECEIVERS ***
-  phototransistor.set_speed(laserreceivespeed);        // laser receive speed - should be 500+ bits/second, nominal 2000 (=2KHz)
+  /*phototransistor.set_speed(laserreceivespeed);        // laser receive speed - should be 500+ bits/second, nominal 2000 (=2KHz)
   phototransistor.set_rxpin(PHOTOT_RECEIVE);           // pin the phototransistor is connected to
-  phototransistor.set_txpin(LASERPIN);      // pin the laser is connected to
   phototransistor.set_inverted(false);                 // if receive signal is inverted (Laser on = logic 0) set this to true
   phototransistor.begin();                             // initialize the receiver
-  
+  */
+
   laser.set_speed(LASERRATE);     // laser modulation speed - should be 500+ bits/second, nominal 2000 (=2KHz)
   laser.set_txpin(LASERPIN);      // pin the laser is connected to
   laser.begin();                  // initialize the laser
@@ -64,25 +64,35 @@ void setup()
   // Set up the LED pins to receive output from the Arduino to display status.
   pinMode(LED_RECEIVE,  OUTPUT);
   pinMode(LED_XMIT,     OUTPUT);
+  pinMode(PHOTOT_RECEIVE, INPUT);
 } //END of setup()
 
 // Set up an interrupt service routine to receive characters
 // Arduino Timer2 reads the LIGHT_RECEIVE_PIN at laser receive speed to receive each half bit
 ISR(TIMER2_COMPA_vect)
 {
-  phototransistor.dummy_echo();
-  //phototransistor.receive();
-  //laser.transmit();
+  if (PHOTOT_RECEIVE == HIGH)
+  {
+    digitalWrite(LASERPIN, HIGH);
+    Serial.println("detected high signal");
+    delay(5);
+  }
+  
+  else
+  {
+    digitalWrite(LASERPIN, LOW);
+    Serial.println("sitting low");
+  }
 }
 
 void loop()
 {
-  c = phototransistor.GetByte();     // get a character from the laser receiver if one is available
+  /*c = phototransistor.GetByte();     // get a character from the laser receiver if one is available
   if (c > 0)
   {
    // if a character is ready, pass it down the line
     //laser.manchester_modulate(c);       // modulate the character using the laser
-    laserTransmit(String(c)); //Just trying to throw this down the proverbial hall
+    //laserTransmit(String(c)); //Just trying to throw this down the proverbial hall
     //delay(CHAR_DELAY);                // wait delay between transmitting individual characters of the message
     
     Serial.println("I just received and passed along " + String(c));
@@ -114,6 +124,7 @@ void loop()
         parameterValue=parameterValue+=(char)c;  // keep building a string character-by-character until a terminator is found
     }
   }
+  */
   linkgood = !(millis() > (timelastchar + linktimeout));  // update the link status based on the timeout value
 
   digitalWrite(LED_RECEIVE, LOW);

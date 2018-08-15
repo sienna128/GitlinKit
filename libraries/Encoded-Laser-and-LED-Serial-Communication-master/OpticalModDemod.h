@@ -2,12 +2,13 @@
 #define OpticalModDemod_H
 #define	CLOCK_SPEED		16000000  // standard Arduino clock 16MHz
 
+int send_flag;				// light send flag
+
 class OpticalTransmitter
 {
 	unsigned long tx_speed;		// bits/second
 	uint8_t tx_buffer[44];
 	uint8_t tx_bitnum;			// bit number to be transmitted
-	int send_flag;				// light send flag
 	uint8_t LIGHT_SEND_PIN;
 	
 	public:
@@ -99,15 +100,18 @@ class OpticalTransmitter
 
 			}
 		
-		void transmit(){
+		void transmit()
+		{
 			//generates pulse wave of frequency 2kHz/2 = 1kHz (takes two cycles for full wave- toggle high then toggle low)
 
 			// Generate wave based on manchester input
-			if(send_flag){
+			if(send_flag)
+			{
 				digitalWrite(LIGHT_SEND_PIN,tx_buffer[tx_bitnum]);
 
 				// shift to next bit in the send buffer
-				if(tx_bitnum < 43){
+				if(tx_bitnum < 43)
+				{
 					tx_bitnum++;    // next bit
 				} else {
 					tx_bitnum = 0;    // reset to beginning of buffer
@@ -124,6 +128,21 @@ class OpticalTransmitter
 			}
 
 		}
+		
+		void dummy_transmit()
+		{
+			if(send_flag)
+			{
+				digitalWrite(LIGHT_SEND_PIN, HIGH);
+                send_flag = 0;
+			
+			}
+			if (!(send_flag))
+			{
+				digitalWrite(LIGHT_SEND_PIN, LOW);
+			}
+		}
+	
 };
 
 
@@ -137,6 +156,7 @@ class OpticalReceiver
 	uint8_t msg_done;
 	uint8_t char_ready;
 	uint8_t LIGHT_RECEIVE_PIN;
+	uint8_t LIGHT_SEND_PIN;
 	bool inverted;
 
 	public:
@@ -162,6 +182,12 @@ class OpticalReceiver
 			
 			inverted = rxinverted;
 		
+		}
+
+		void set_txpin(int laser_pin){
+			
+			LIGHT_SEND_PIN = laser_pin;
+			
 		}
 		
 		void begin(){
@@ -191,6 +217,7 @@ class OpticalReceiver
 		//Serial.println((CLOCK_SPEED / (2 * rx_speed * 64)) - 1);
 			//set photodiode pin as input
 			pinMode(LIGHT_RECEIVE_PIN, INPUT);
+			pinMode(LIGHT_SEND_PIN, OUTPUT);
 		}
 		
 		uint16_t manchester_demodulate(){
@@ -269,6 +296,30 @@ class OpticalReceiver
 			}
 		}
 		
+		void dummy_receive()
+		{	
+			if (LIGHT_RECEIVE_PIN) 
+			{
+				send_flag = 1;
+			}
+		}
+		
+		void dummy_echo()
+		{	
+			boolean tmp;
+			tmp = PIND & (1 << LIGHT_RECEIVE_PIN); //get a bit by using direct pin access for speed
+			if (tmp) 
+			{
+				digitalWrite(LIGHT_SEND_PIN, HIGH);
+				//Serial.println("got something!");
+			}
+			if (!tmp)
+			{
+				digitalWrite(LIGHT_SEND_PIN, LOW);
+				//Serial.println("got nothing.");
+			}
+		}
+		
 		//void printByte(){
 		//	if(char_ready){
 		//		Serial.print((char)msg_done);
@@ -280,8 +331,10 @@ class OpticalReceiver
 		//	} 
 		//}
 		
-		uint8_t GetByte(){
-			if(char_ready){
+		uint8_t GetByte()
+		{
+			if(char_ready)
+			{
 				char_ready = 0;
 				return(msg_done);
 			} else {
