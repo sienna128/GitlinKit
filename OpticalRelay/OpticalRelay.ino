@@ -135,13 +135,14 @@ void loop()
   } //end IFCHECK-ELSE (link is bad)
 } // end main loop()
 
-  void  laserTransmit(String xmitmsg){
-   for (i=0; i<(xmitmsg.length()+1); i++){  // transmit the string byte by byte
-      incomingByte=xmitmsg.charAt(i);       // get the character at position i
-      //Serial.print(incomingByte);
-      msg = hamming_byte_encoder(incomingByte); // encode the character
-      laser.manchester_modulate(msg);       // modulate the character using the laser
-      delay(CHAR_DELAY); // wait delay between transmitting individual characters of the message
-
-    }
+void  laserTransmit(String xmitmsg)
+{
+  for (i=0; i<(xmitmsg.length()+1); i++)  // transmit the string byte by byte
+  {  
+    incomingByte=xmitmsg.charAt(i);       // get the character at position i
+    //Serial.print(incomingByte);
+    msg = hamming_byte_encoder(incomingByte); // encode the character
+    laser.manchester_modulate(msg);       // modulate the character using the laser
+    delay(CHAR_DELAY);                    // wait delay between transmitting individual characters of the message
   }
+}
