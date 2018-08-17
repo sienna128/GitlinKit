@@ -24,6 +24,7 @@ unsigned long  timelastchar;          // variable to hold the time the last vali
 bool           linkgood;              // flag to store optical link status
 bool           timetoswitch;          // flag to cycle through the measurands
 bool           blankedvalues;         // flag to determine if values have been blanked for a bad laser link
+bool           bit_bucket;            // temporary bucket to hold the inbound bit
 unsigned long  timenow;               // holds the Arduino running time in milliseconds for display times
 int            LED_transmit_timer_ticker = 0;      //Since we're avoiding using delay(), this will make sure the Xmit LED stays on long enough to be human-noticeable.
                                       
@@ -71,9 +72,16 @@ void setup()
 // Arduino Timer2 reads the LIGHT_RECEIVE_PIN at laser receive speed to receive each half bit
 ISR(TIMER2_COMPA_vect)
 {
-  phototransistor.dummy_echo();
-  //phototransistor.receive();
-  //laser.transmit();
+  //phototransistor.dummy_echo();
+  bit_bucket = PIND & (1 << PHOTOT_RECEIVE); //Grab the bit via direct pin access.
+  if (bit_bucket)
+  {
+    digitalWrite(LASERPIN, HIGH);
+  }
+  else
+  {
+    digitalWrite(LASERPIN, LOW);
+  }
 }
 
 void loop()

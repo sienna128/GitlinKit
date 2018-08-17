@@ -296,30 +296,7 @@ class OpticalReceiver
 			}
 		}
 		
-		void dummy_receive()
-		{	
-			if (LIGHT_RECEIVE_PIN) 
-			{
-				send_flag = 1;
-			}
-		}
-		
-		void dummy_echo()
-		{	
-			boolean tmp;
-			tmp = PIND & (1 << LIGHT_RECEIVE_PIN); //get a bit by using direct pin access for speed
-			if (tmp) 
-			{
-				digitalWrite(LIGHT_SEND_PIN, HIGH);
-				//Serial.println("got something!");
-			}
-			if (!tmp)
-			{
-				digitalWrite(LIGHT_SEND_PIN, LOW);
-				//Serial.println("got nothing.");
-			}
-		}
-		
+	
 		//void printByte(){
 		//	if(char_ready){
 		//		Serial.print((char)msg_done);
