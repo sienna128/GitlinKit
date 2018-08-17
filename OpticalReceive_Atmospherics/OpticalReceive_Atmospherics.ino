@@ -90,7 +90,6 @@ void setup()
   // define the pins to be used for the LEDs that indicate which measurand
   // is being displayed
   pinMode(LED_Temp, OUTPUT);
-  pinMode(LED_Press, OUTPUT);
   pinMode(LED_Humid, OUTPUT);
   
 }
@@ -156,10 +155,6 @@ void loop()
          digitalWrite(LED_Temp, HIGH);
          break;
        case 2:
-         displayValue(strPressure);
-         digitalWrite(LED_Press, HIGH);
-         break;
-       case 3:
          displayValue(strHumidity);
          digitalWrite(LED_Humid, HIGH);
          break;
@@ -171,11 +166,10 @@ void loop()
     {
       lc.clearDisplay(0);
       digitalWrite(LED_Temp, LOW);
-      digitalWrite(LED_Press, LOW);
       digitalWrite(LED_Humid, LOW);
       timetoswitch = true;
       measurand++;
-      if (measurand > 3)
+      if (measurand > 2)
       {
         measurand=1;
       }
@@ -193,7 +187,6 @@ void loop()
     {
       blankedvalues=true;
       digitalWrite(LED_Temp, LOW);
-      digitalWrite(LED_Press, LOW);
       digitalWrite(LED_Humid, LOW); 
       strTemperature = " ";
       strPressure    = " ";
