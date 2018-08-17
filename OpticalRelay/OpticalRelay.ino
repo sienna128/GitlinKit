@@ -64,6 +64,7 @@ void setup()
   // Set up the LED pins to receive output from the Arduino to display status.
   pinMode(LED_RECEIVE,  OUTPUT);
   pinMode(LED_XMIT,     OUTPUT);
+  
 } //END of setup()
 
 // Set up an interrupt service routine to receive characters
@@ -77,62 +78,15 @@ ISR(TIMER2_COMPA_vect)
 
 void loop()
 {
-  c = phototransistor.GetByte();     // get a character from the laser receiver if one is available
-  if (c > 0)
-  {
-   // if a character is ready, pass it down the line
-    //laser.manchester_modulate(c);       // modulate the character using the laser
-    laserTransmit(String(c)); //Just trying to throw this down the proverbial hall
-    //delay(CHAR_DELAY);                // wait delay between transmitting individual characters of the message
-    
-    Serial.println("I just received and passed along " + String(c));
-    blankedvalues=false;
-    timelastchar=millis();
-    switch (c)
-    {       
-      // if the character is a terminator, store what was built in a variable and display it
-      case 84:         // ASCII T termination character for temperature, use string built to this point for temp
-        strTemperature = parameterValue;
-        parameterValue = "";
-        //Serial.println(strTemperature);
-        laserTransmit(strTemperature);
-        break;
-      case 80:        // ASCII P termination character for pressure, use string built to this point for pressure
-        strPressure = parameterValue;
-        parameterValue = "";
-        //Serial.println(strPressure);
-        laserTransmit(strPressure);
-        break;    
-      case 72:        // ASCII H termination character for humidity, use string built to this point for humidity
-        strHumidity = parameterValue;
-        parameterValue = "";
-        //Serial.println(strHumidity);
-        laserTransmit(strHumidity);
-        break;
-      default :
-        //Serial.println(parameterValue);
-        parameterValue=parameterValue+=(char)c;  // keep building a string character-by-character until a terminator is found
-    }
-  }
   linkgood = !(millis() > (timelastchar + linktimeout));  // update the link status based on the timeout value
-
   digitalWrite(LED_RECEIVE, LOW);
+  digitalWrite(LED_XMIT,   HIGH);
   if (linkgood)
   {
     // Power RECEIVE LED if the link is good.
     digitalWrite(LED_RECEIVE, HIGH);
+    digitalWrite(LED_XMIT,     LOW);
   }
-  else
-  {
-  // link is bad, so display a distinctive pattern,
-   if (!blankedvalues)
-   {
-     blankedvalues=true;
-     strTemperature = " ";
-     strPressure    = " ";
-     strHumidity    = " ";
-    }
-  } //end IFCHECK-ELSE (link is bad)
 } // end main loop()
 
 void  laserTransmit(String xmitmsg)
