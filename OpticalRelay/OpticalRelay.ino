@@ -8,7 +8,7 @@
   https://github.com/HobbyTransform/Encoded-Laser-and-LED-Serial-Communication
 
   Arduino sketch by Tom Gitlin and J. Acevedo
-  version 0.0 09 Aug 2018 -- First stab.
+  version 0.6 03 Dec 2018 -- Getting ready for v1.0 release.
 
 ***************************************************************************/
 #include <HammingEncDec.h>        // include the Hamming encoder/decoder functionality
@@ -55,7 +55,7 @@ void setup()
   phototransistor.set_speed(laserreceivespeed);        // laser receive speed - should be 500+ bits/second, nominal 2000 (=2KHz)
   phototransistor.set_rxpin(PHOTOT_RECEIVE);           // pin the phototransistor is connected to
   phototransistor.set_txpin(LASERPIN);      // pin the laser is connected to
-  phototransistor.set_inverted(false);                 // if receive signal is inverted (Laser on = logic 0) set this to true
+  phototransistor.set_inverted(false);                 // if receive signal is inverted (Laser on = logic 0) set this to true; should be off for proper QRD-1114s.
   phototransistor.begin();                             // initialize the receiver
   
   laser.set_speed(LASERRATE);     // laser modulation speed - should be 500+ bits/second, nominal 2000 (=2KHz)
@@ -77,10 +77,12 @@ ISR(TIMER2_COMPA_vect)
   if (bit_bucket)
   {
     digitalWrite(LASERPIN, HIGH);
+    Serial.println("ping");
   }
   else
   {
     digitalWrite(LASERPIN, LOW);
+    Serial.println(" ");
   }
 }
 
@@ -102,7 +104,7 @@ void  laserTransmit(String xmitmsg)
   for (i=0; i<(xmitmsg.length()+1); i++)  // transmit the string byte by byte
   {  
     incomingByte=xmitmsg.charAt(i);       // get the character at position i
-    //Serial.print(incomingByte);
+    Serial.print(incomingByte);
     msg = hamming_byte_encoder(incomingByte); // encode the character
     laser.manchester_modulate(msg);       // modulate the character using the laser
     delay(CHAR_DELAY);                    // wait delay between transmitting individual characters of the message
