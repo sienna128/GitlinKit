@@ -77,7 +77,7 @@ void setup()
   
   phototransistor.set_speed(laserreceivespeed);             // laser receive speed - should be 500+ bits/second, nominal 2000 (=2KHz)
   phototransistor.set_rxpin(PHOTOTRANSISTOR_RECEIVE);       // pin the phototransistor is connected to
-  phototransistor.set_inverted(false);                       // if receive signal is inverted (Laser on = logic 0) set this to true
+  phototransistor.set_inverted(true);                       // if receive signal is inverted (Laser on = logic 0) set this to true. Proper QRD-1114's should have this set to TRUE.
   phototransistor.begin();                                  // initialize the receiver
 
   // The MAX72XX is in power-saving mode on startup, so wake it up
@@ -107,37 +107,35 @@ void loop()
   
   if (c>0)
   {
+   //Serial.println(parameterValue);
    // if a character is ready, look at it
-   Serial.println(c);
-   //tempChar=(char)c;
-   //Serial.println(tempChar);
+   // Toggle the following line out of comment mode to read char by char.
+   //Serial.println(c); tempChar=(char)c;   Serial.println(tempChar);
     blankedvalues=false;
     timelastchar=millis();
     switch (c)
 	  {       
 	    // if the character is a terminator, store what was built in a variable and display it
       case 84:         // ASCII T termination character for temperature, use string built to this point for temp
+        //Serial.println("Received T terminator.");
         strTemperature=parameterValue;
         parameterValue="";
-        Serial.println(strTemperature);
-        //displayValue(strTemperature);
         break;
       case 80:        // ASCII P termination character for pressure, use string built to this point for pressure
+        //Serial.println("Received P terminator.");
         strPressure=parameterValue;
         parameterValue="";
-        Serial.println(strPressure);
-        //displayValue(strPressure);
         break;    
       case 72:        // ASCII H termination character for humidity, use string built to this point for humidity
+        //Serial.println("Received H terminator.");
         strHumidity=parameterValue;
         parameterValue="";
-        Serial.println(strHumidity);
-        //displayValue(strHumidity);
         break;
       default :
         //Serial.println(parameterValue);
         parameterValue=parameterValue+=(char)c;  // keep building a string character-by-character until a terminator is found
     }
+    //Serial.println("T: " + strTemperature + "\t H: " + strHumidity);
   }
 
   linkgood = !(millis() > (timelastchar + linktimeout));  // update the link status based on the timeout value
@@ -153,10 +151,14 @@ void loop()
        case 1:
          displayValue(strTemperature);
          digitalWrite(LED_Temp, HIGH);
+         Serial.print("T: ");
+         Serial.println(strTemperature);
          break;
        case 2:
          displayValue(strHumidity);
          digitalWrite(LED_Humid, HIGH);
+         Serial.print("H: ");
+         Serial.println(strHumidity);
          break;
       }
     }
@@ -197,6 +199,7 @@ void loop()
       lc.setRow(0,3,0x5B); // diplay a lowercase S
       lc.setRow(0,2,0x4F); // diplay a capital E
       lc.setRow(0,1,0x05); // diplay a lowercase r
+      Serial.println("BAD LINK; CHECK LASER.");
     }
   } //end IFCHECK-ELSE (link is bad)
 } // end main loop
@@ -260,5 +263,3 @@ void displayValue(String msgtodisplay)
     lc.setRow(0,0,0x01); // diplay a dash     
   }
 }
-
-
