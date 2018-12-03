@@ -19,9 +19,7 @@ const int      laserreceivespeed = 2000;  //MUST MATCH THE SPEED AS DEFINED IN T
 
 unsigned long  timelastchar;          // variable to hold the time the last valid character was received
 bool           linkgood;              // flag to store optical link status
-bool           blankedvalues;         // flag to determine if values have been blanked for a bad laser link
 bool           bit_bucket;            // temporary bucket to hold the inbound bit
-int            LED_transmit_timer_ticker = 0;      //Since we're avoiding using delay(), this will make sure the Xmit LED stays on long enough to be human-noticeable.
                                       
 /* IMPORTANT: The Delay function is used sparingly because it stalls program execution
 (except for interrupts) and can affects the ability to check if characters are ready. */
@@ -43,7 +41,7 @@ void setup()
   phototransistor.set_speed(laserreceivespeed);        // laser receive speed - should be 500+ bits/second, nominal 2000 (=2KHz)
   phototransistor.set_rxpin(PHOTOT_RECEIVE);           // pin the phototransistor is connected to
   phototransistor.set_txpin(LASERPIN);      // pin the laser is connected to
-  phototransistor.set_inverted(false);                 // if receive signal is inverted (Laser on = logic 0) set this to true; should be TRUE for proper QRD-1114s.
+  phototransistor.set_inverted(true);                
   phototransistor.begin();                             // initialize the receiver
   
   laser.set_speed(LASERRATE);     // laser modulation speed - should be 500+ bits/second, nominal 2000 (=2KHz)
@@ -55,36 +53,35 @@ void setup()
   pinMode(LED_LINKBAD,     OUTPUT); 
 } //END of setup()
 
-// Set up an interrupt service routine to receive characters
-// Arduino Timer2 reads the LIGHT_RECEIVE_PIN at laser receive speed to receive each half bit
+// Set up an interrupt service routine to receive characters.
+// Arduino Timer2 reads the LIGHT_RECEIVE_PIN at laser receive speed to receive each half bit.
 // *** DO NOT PUT ANY DEBUG MESSAGES IN THIS FUNCTION; IT IS FINELY-TUNED FOR TIMING.***
 ISR(TIMER2_COMPA_vect)
 {
-  //phototransistor.dummy_echo();
   bit_bucket = PIND & (1 << PHOTOT_RECEIVE); //Grab the bit via direct pin access.
   if (bit_bucket)
   {
-    digitalWrite(LASERPIN, HIGH);
+    digitalWrite(LASERPIN, LOW); //Re-inverting this to be re-re-inverted at the "ground station."
   }
   else
   {
-    digitalWrite(LASERPIN, LOW);
+    digitalWrite(LASERPIN, HIGH); //Re-inverting this to be re-re-inverted at the "ground station."
   }
 }
 
 void loop()
 {
   linkgood = !(millis() > (timelastchar + linktimeout));  // update the link status based on the timeout value
-  //digitalWrite(LED_LINKGOOD, LOW);
-  //digitalWrite(LED_LINKBAD,   LOW);
+/*  digitalWrite(LED_LINKGOOD, LOW);
+  digitalWrite(LED_LINKBAD,   LOW);
   if (linkgood)
   {
-    // Power GOOD LED if the link is good.
-    //digitalWrite(LED_LINKGOOD, HIGH);
+   // Power GOOD LED if the link is good.
+    digitalWrite(LED_LINKGOOD, HIGH);
   }
   else
   {
     // Power BAD LED if the link is bad.
-    //digitalWrite(LED_LINKBAD,     HIGH);    
-  }
+    digitalWrite(LED_LINKBAD,     HIGH);    
+  }*/
 } // end main loop()
