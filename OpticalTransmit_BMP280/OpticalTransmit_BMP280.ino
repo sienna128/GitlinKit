@@ -75,7 +75,10 @@ void loop()
   pressure = bme.readPressure()/100;    // read the pressure. Pressure is returned in Pascals, divide by 100 to get millibars
   humidity = bme.readHumidity();        // read the humidity. Humidity is returned in percent relative humidity
 
-  // if english units are desired, perform the conversion
+  // If english units are desired, perform the conversion.
+  // TODO transmit everything in SI units and do the conversion 
+  // on the receiving end so that I can get discretionary control
+  // over the unit symbol.
   if (english) 
   {
     temperature = temperature * 1.8 + 32.0; // convert C to F
